@@ -6,3 +6,4 @@
  As potentiometer is varied, message containing detected temperature is shown in serial monitor.
 
 
+[![Compile-Linux](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Compile.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Compile.yml)
