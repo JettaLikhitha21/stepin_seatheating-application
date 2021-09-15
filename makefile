@@ -7,7 +7,7 @@ SRC = SeatHeatingApp.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
-src/activity4.c\
+
 
 
 #Object copy to create hexfile
