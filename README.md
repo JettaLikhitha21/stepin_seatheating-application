@@ -11,7 +11,7 @@
 [![C/C++ CI](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/c-build.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/c-build.yml)
 [![Valgrind](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Valgrind.yml)
   <a href="https://frontend.code-inspector.com/public/project/28654/stepin_seatheating-application/dashboard">
-   <img src="https://www.code-inspector.com/project/28654/score/svg" />
+   <img src="https://www.code-inspector.com/project/28664/score/svg" />
    <img src="https://www.code-inspector.com/project/28654/status/svg"/>
  
 </a>
