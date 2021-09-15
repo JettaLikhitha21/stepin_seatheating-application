@@ -9,3 +9,4 @@
 [![Compile-Linux](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Compile.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Compile.yml)
 [![Cppcheck](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/CodeQulaity.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/CodeQulaity.yml)
 [![C/C++ CI](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/c-build.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/c-build.yml)
+[![Valgrind](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/JettaLikhitha21/stepin_seatheating-application/actions/workflows/Valgrind.yml)
