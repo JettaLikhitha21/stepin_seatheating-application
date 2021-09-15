@@ -1,35 +1,45 @@
+/**
+ * @file activity1.c
+ * @author jettalikhitha
+ * @brief User defined utilities, to define pins and ports to Blink an LED ON/OFF 
+ * @version 0.1
+ * @date 2021-09-14
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "activity1.h"
 
-/**
- * @brief initialise registers
- * 
- */
 
 void peripheral_init(void)
-{
-	DDRB|=(1<<PB0);
-	DDRD&=~(1<<PD0);
-	PORTD|=(1<<PD0);
-	DDRD&=~(2<<PD0);
-	PORTD|=(2<<PD0);
+{	
+	DDRD |= (1<<PD2); // set PD2=1 for LED
+    DDRD &= ~(1<<PD0); //clear bit
+    PORTD |= (1<<PD0); //set bit PD0 for SeatSwitch
+    DDRD &= ~(1<<PD1); //clear bit
+    PORTD |= (1<<PD1); //set bit PD0 for HeaterSwitch
 }
 
-/**
- * @brief && 2 buttons and proceed if both are on
- * 
- * @return uint16_t 
- */
+void TurnLED_ON(){
+    LED_PORT |= (1<<LED_PIN); 
+}
 
-uint16_t buttons()
+void TurnLED_OFF(){
+    LED_PORT &= ~(1<<LED_PIN);
+}
+
+int act1=0;
+int activity1_LED(void)
 {
-    if((!(PIND&(1<<PD0))) & (!(PIND&(2<<PD0))))
-        {
-            PORTD|=(1<<PD6);
-            return 1;
+       peripheral_init();
+        if(!(PIND&(1<<BUTTON_SENSOR )) && !(PIND&(1<<TEMP_SENSOR))) //both the switches are pressed
+        { 
+            act1=1;
         }
-        else
+        else  //in all other cases
         {
-            PORTD&=~(1<<PD6);
-            return 0;
+            act1=0;
         }
+    return act1;
 }
